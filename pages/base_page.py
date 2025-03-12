@@ -11,3 +11,4 @@ class BasePage:
 
     def find_element(self, locator):
         return self.driver.find_element(By.CSS_SELECTOR, locator)
+
