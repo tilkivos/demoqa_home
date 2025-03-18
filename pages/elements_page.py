@@ -9,5 +9,9 @@ class ElementsPage(BasePage):
         super().__init__(driver, self.base_url)
         self.center_text = WebElement(driver, '#app > div > div > div > div.col-12.mt-4.col-md-6')
 
-    def get_text_from_center(self):
-        return self.center_text.get_text()
+        self.icon = WebElement(driver, 'header > a > img')
+        self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1) > span > div')
+        self.btn_sidebar_first_textbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-0 > span')
+        self.btn_sidebar_first_checkbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-1 > span')
+
+
