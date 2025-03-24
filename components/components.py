@@ -65,6 +65,9 @@ class WebElement:
             self.find_element()
         )
 
+    def check_css(self, style, value =''):
+        return self.find_element().value_of_css_property(style) == value
+
 
     def get_by_type(self):
         if self.locator_type == 'id':
