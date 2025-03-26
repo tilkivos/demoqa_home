@@ -28,3 +28,10 @@ class Tables(BasePage):
         self.jump_to_page = WebElement(driver, ' div > input[type=number]')
         self.table_1_Column = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(1)')
         self.tableElement = WebElement(driver, 'div.rt-table > div.rt-tbody > div:nth-child(1) > div > div:nth-child(1)')
+
+        self.first_name_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]','xpath')
+        self.last_name_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[2]','xpath')
+        self.age_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[3]','xpath')
+        self.email_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[4]','xpath')
+        self.salary_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[5]','xpath')
+        self.department_column = WebElement(driver,'/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[6]','xpath')
